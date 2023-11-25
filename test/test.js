@@ -2,7 +2,7 @@ import axios from 'axios';
 import { expect } from 'chai';
 import { describe, it } from 'mocha';
 
-describe('API Test', async () => {
+describe('Account', async () => {
     // it('Register user ', () => {
     //     axios
     //         .post(
@@ -42,3 +42,5 @@ describe('API Test', async () => {
         console.log(response.statusText);
     });
 });
+
+describe('BookStore', async () => {});
