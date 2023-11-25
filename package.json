@@ -1,0 +1,29 @@
+{
+  "name": "demoqa-testing",
+  "version": "1.0.0",
+  "description": "Testing DEMOQA REST API Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsvetanilievdev/demoqa-api-testing.git"
+  },
+  "keywords": [
+    "test",
+    "rest",
+    "api"
+  ],
+  "author": "Tsvetan Iliev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsvetanilievdev/demoqa-api-testing/issues"
+  },
+  "homepage": "https://github.com/tsvetanilievdev/demoqa-api-testing#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
