@@ -12,11 +12,18 @@ First, install the project dependencies:
 
 ```bash
 npm install
+```
 
-Running the Tests
-To run the test scripts, use the following command:
+## Running the Tests
+
+### To run the test scripts, use the following command:
+
+```bash
 npm run test
+```
 
-To execute test scripts with a reporter, use the following command:
+### To execute test scripts with a reporter, use the following command:
+
+```bash
 npm run test:report
 ```
