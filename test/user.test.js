@@ -19,17 +19,17 @@ describe('Create user - Happy Paths', () => {
         }
     });
 
-    describe('Create user', () => {
+    describe('Create user successfully', () => {
         it('Status code must be 201', async () => {
             assert.equal(status, 201, 'Status is not 201');
         });
 
-        it('Response data has property "userId"', async () => {
+        it('Response object has property "userId"', async () => {
             assert.property(data, 'userId', 'userId property is not present');
             assert.isString(data.userId, 'userId is not string');
         });
 
-        it('Response data has property "username"', async () => {
+        it('Response object has property "username"', async () => {
             assert.property(
                 data,
                 'username',
@@ -38,7 +38,7 @@ describe('Create user - Happy Paths', () => {
             assert.isString(data.username, 'username is not string');
         });
 
-        it('Response data has property "books"', async () => {
+        it('Response object has property "books"', async () => {
             assert.property(data, 'books', 'books property is not present');
             assert.isArray(data.books, 'books is not array');
         });
@@ -66,7 +66,7 @@ describe('Create user - Negative Paths', () => {
     let password;
     let response;
 
-    describe('should not create user with existing username', () => {
+    describe('Should not create user with existing username', () => {
         it('should return status code - 400, 404 or 406 ', async () => {
             userName = 'seskobg';
             password = 'Cesc123!';
