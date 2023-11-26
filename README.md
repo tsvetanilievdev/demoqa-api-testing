@@ -1,6 +1,6 @@
 # Test Overview
 
-This project contains tests for the Book Store API, documentation: https://demoqa.com/swagger/
+This project contains tests for the Book Store API, documentation: https://demoqa.com/swagger/ .
 Each test verifies the response status code, the response body structure, and the values of certain response body properties.
 
 ## Test Tasks
