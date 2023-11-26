@@ -1,11 +1,22 @@
-# demoqa-api-testing
+# Test Scripts Execution Guide
 
-demoqa-api-testing
+This guide provides instructions on how to run the test scripts for this project.
 
-## To execute test scripts run the following command:
+## Prerequisites
 
+Ensure that you have Node.js and npm installed on your machine.
+
+## Installation
+
+First, install the project dependencies:
+
+```bash
+npm install
+
+Running the Tests
+To run the test scripts, use the following command:
 npm run test
 
-## To execute test scripts with reporter run the following command:
-
+To execute test scripts with a reporter, use the following command:
 npm run test:report
+```
