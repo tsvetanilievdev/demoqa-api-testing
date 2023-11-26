@@ -4,7 +4,7 @@
   "description": "Testing DEMOQA REST API Service",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --timeout 30000",
     "test:report": "mocha --reporter mochawesome"
   },
   "type": "module",
