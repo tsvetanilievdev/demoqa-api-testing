@@ -27,6 +27,7 @@ This project uses the following frameworks and tools:
 -   [Mocha](https://mochajs.org/): A JavaScript test framework running on Node.js.
 -   [Chai](https://www.chaijs.com/): A BDD / TDD assertion library for Node.js.
 -   [Axios](https://axios-http.com/): A promise-based HTTP client for the browser and Node.js.
+-   [Mocha Reporter](https://www.npmjs.com/package/mochawesome): A mocha test reporter that generates a full fledged HTML/CSS report that helps visualize your test suites.
 
 ## Installation
 
