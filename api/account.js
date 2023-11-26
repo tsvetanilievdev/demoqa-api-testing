@@ -1,6 +1,8 @@
+import axios from 'axios';
+
 const url = 'https://demoqa.com/Account/v1';
 
-async function createAccount(userName, password) {
+export async function createAccount(userName, password) {
     try {
         const response = await axios.post(url + '/User', {
             userName,
@@ -12,7 +14,7 @@ async function createAccount(userName, password) {
     }
 }
 
-async function getAccount(userId) {
+export async function getAccount(userId) {
     try {
         const response = await axios.get(url + '/User/' + userId);
         return response;
@@ -20,8 +22,3 @@ async function getAccount(userId) {
         return error.response;
     }
 }
-
-module.exports = {
-    createAccount,
-    getAccount,
-};
