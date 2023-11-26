@@ -2,7 +2,7 @@ import { assert } from 'chai';
 import { describe, it } from 'mocha';
 import { createUser, getUser } from '../api/user.js';
 
-describe('Create user - Happy Paths', () => {
+describe('Create user - Happy Path', () => {
     let userName;
     let password;
     let data;
@@ -61,7 +61,7 @@ describe('Create user - Happy Paths', () => {
     });
 });
 
-describe('Create user - Negative Paths', () => {
+describe('Create user - validate errors', () => {
     let userName;
     let password;
     let response;
