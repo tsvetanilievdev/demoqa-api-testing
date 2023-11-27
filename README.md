@@ -3,16 +3,6 @@
 This project contains tests for the Book Store API, documentation: https://demoqa.com/swagger/ .
 Each test verifies the response status code, the response body structure, and the values of certain response body properties.
 
-## Test Tasks
-
-1. Write tests for the different types of possible errors when creating a new user. Each error should be validated.
-2. Create a new user and validate that it has been created.
-3. From the list of all books, select one and add it to the preferred books (collection). Validate that the book has been added.
-4. Add a book with a non-existent ISBN number to the preferred books (collection). Validate the error.
-5. From the list of all books, select another book to replace the first one in the preferred books (collection). Validate that the book has been replaced.
-6. Validate that the book with ISBN number 9781491904244 has 278 pages.
-7. Remove the book from the preferred books (collection). Validate that the book has been removed.
-8. From the preferred books (collection), remove a book that has not been added to it. Validate the error.
 
 # Test Scripts Execution Guide
 
