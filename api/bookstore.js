@@ -14,7 +14,7 @@ export async function getBooks() {
 export async function addBook(userId, isbn, userName, password) {
     try {
         const response = await axios.post(
-            'https://demoqa.com/BookStore/v1/Books',
+            url + '/Books',
             {
                 userId,
                 collectionOfIsbns: [
@@ -48,7 +48,7 @@ export async function replaceBook(
 ) {
     try {
         const response = await axios.put(
-            'https://demoqa.com/BookStore/v1/Books/' + oldBookISBN,
+            url + '/Books/' + oldBookISBN,
             {
                 userId,
                 isbn: newBookISBN,
@@ -71,22 +71,19 @@ export async function replaceBook(
 
 export async function deleteBook(userId, isbn, userName, password) {
     try {
-        const response = await axios.delete(
-            'https://demoqa.com/BookStore/v1/Book',
-            {
-                auth: {
-                    username: userName,
-                    password: password,
-                },
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                data: {
-                    userId,
-                    isbn,
-                },
-            }
-        );
+        const response = await axios.delete(url + '/Book', {
+            auth: {
+                username: userName,
+                password: password,
+            },
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            data: {
+                userId,
+                isbn,
+            },
+        });
         return response;
     } catch (error) {
         return error.response;
